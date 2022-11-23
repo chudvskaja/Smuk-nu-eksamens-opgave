@@ -1,0 +1,123 @@
+.statement-item {
+    width: 75%;
+    margin: 0 auto 72px;
+    border-bottom: 1px solid var(--pink-accent);
+  }
+
+  
+  
+  .client-img {
+    border: 10px solid var(--pink-accent);
+    border-radius: 50%;
+    margin: 0 auto 65px;
+    display: block;
+  }
+  
+  .statement-text {
+    font-size: 20px;
+    color: var(--grey-color);
+    text-align: center;
+    margin-bottom: 18px;
+    padding: 0 40px;
+  }
+
+  .statement-link {
+    font-weight: bold;
+  }
+  
+  .client-name, .client-role {
+    text-align: center;
+    font-size: 20px;
+    color: var(--grey-color);
+  }
+  
+  .client-name {
+    font-weight: bold;
+  }
+  
+  .client-role {
+    margin-bottom: 24px;
+  }
+
+
+  @media screen and (min-width: 728px) {
+    .statement-title {
+      font-size: 68px;
+    }
+    .statement-item {
+      display: grid;
+      grid-template-areas:
+      'img img img text-big text-big'
+      'text text text text text'
+      'role role role role role';
+      border-bottom: none;
+      margin: 0 auto;
+      width: 90%;
+    }
+
+    .statement-item:nth-child(even)  {
+      grid-template-areas:
+      'text-big text-big img img img'
+      'text text text text text'
+      'role role role role role';
+    }
+
+    .statement-item:nth-child(even) .client-name{
+      text-align: right;
+    }
+
+    .statement-item:nth-child(even) .client-role{
+      text-align: right;
+    }
+
+    .statement-item {
+      margin-bottom: 0;
+    }
+    
+    .client-img {
+      margin: 0;
+      grid-area: img;
+  
+    }
+    
+    .statement-text {
+      grid-area: text-big;
+      margin: 0;
+      padding: 25px 35px;
+    }
+
+    
+  
+  .client-name {
+    font-weight: bold;
+    grid-area: text;
+    padding: 0 12px;
+  }
+
+  .client-name, .client-role {
+    text-align: left;
+  }
+
+
+  .client-role {
+    margin-bottom: 24px;
+    grid-area: role;
+    padding: 0 12px;
+  }
+
+  .show {
+    width: 200px;
+    height: 200px;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--pink-accent);
+    color: var(--white-color);
+    font-size: 18px;
+    padding: 8px;
+    position: absolute;
+    bottom: 250px;
+    right: 50px;
+    text-align: center;
+    font-weight: bold;
+  }
+  }

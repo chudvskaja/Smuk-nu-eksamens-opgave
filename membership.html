@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLIV MEDLEM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/membership.min.css">
+</head>
+<body>
+    <header>
+        <!-- Simulate a smartphone / tablet -->
+         <div class="mobile-container">
+         
+         <!-- Top Navigation Menu -->
+         <div class="topnav">
+           <a href="#home">
+             <img src="./assets/logo/smuknu_logo.png" alt="logo Smuk.nu" width="100px">
+         </a>
+           <div id="myLinks">
+             <a href="index.html">FORSIDEN</a>
+             <a href="products.html">VORES PRODUKTER</a>
+             <a href="question.html">SPØRG OM SUNDHED</a>
+             <a href="membership.html">BLIV MEDLEM</a>
+           </div>
+           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+             <i class="fa fa-bars"></i>
+           </a>
+         </div>
+         <!-- End smartphone / tablet look -->
+         </div>
+     </header>
+     <section class="hero">
+        <div class="hero-container">
+            <h1 class="member-title">BLIV MEDLEM</h1>
+            <p class="hero-text one">Opret dig som medlem og få flere fordele og nyheder I det øjeblik vi har dem. </p>
+            <p class="hero-text">Send gerne ris eller ros med når du melder dig ind, vi er altid parate til dialog.</p>
+        </div> 
+    </section>
+    <form>
+        <label for="fname">Fulde navn</label>
+        <input type="text" id="fname" name="fname" required>
+        <label for="lname">E-mail</label>
+        <input type="text" id="lname" name="lname" required>
+        <label class="text" for="textarea">Ris og/eller ros</label>
+        <textarea name="comment" id="comment" cols="30" rows="100"></textarea>
+        <input class="submit" type="submit" value="Opret" >
+        <div class="success">
+        </div>
+      </form> 
+      
+    <footer>
+        <ul class="social-media-list">
+            <li class="SoMe-item">
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+            <li class="SoMe-item">
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li class="SoMe-item">
+                <a href="">
+                    <i class="fa-brands fa-pinterest"></i>
+                </a>
+            </li>
+            <li class="SoMe-item">
+                <a href="">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li class="SoMe-item">
+                <a href="">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </li>
+        </ul> 
+        <address>
+            <a href="mailto:mail@smuk.nu">mail@smuk.nu</a><br>
+            <a href="callto:+4512334533">+45 123 345 33</a>
+        
+        </address>
+        </footer>
+    <script src="./js/burger-menu.js"></script>
+    <script src="https://kit.fontawesome.com/47244aaa39.js" crossorigin="anonymous"></script>
+    <script src="./js/submit.js" type="module"></script>
+</body>
+</html>

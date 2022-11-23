@@ -1,0 +1,42 @@
+.hero{
+background-image: url(../assets/headers/subscribers.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 587px;
+position: relative;
+}
+
+.hero-container {
+    background-color: var(--white-color);
+    position: absolute;
+    top: 103px;
+    width: 100%;
+    padding: 45px 48px 46px;
+}
+
+.hero-text.one {
+    margin-bottom: 24px;
+}
+
+.hero-text {
+    font-size: 18px;
+    text-align: center;
+}
+
+@media screen and (min-width: 728px) {
+
+    .hero-container {
+      width: 80%;
+      top: 25%;
+      left: 10%;
+    }
+  
+    h1, h2 {
+      font-size: 64px;
+    }
+  
+    .hero-text.two {
+      display: none;
+    }
+  }

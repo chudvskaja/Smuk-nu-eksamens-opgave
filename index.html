@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>Smuk.nu</title>
+</head>
+<body>
+    <header>
+       <!-- Simulate a smartphone / tablet -->
+        <div class="mobile-container">
+        
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+          <a href="#home">
+            <img src="./assets/logo/smuknu_logo.png" alt="logo Smuk.nu" width="100px">
+        </a>
+          <div id="myLinks">
+            <a href="index.html">Forsiden</a>
+            <a href="products.html">Vores produkter</a>
+            <a href="question.html">Spørg om sundhed</a>
+            <a href="membership.html">Bliv medlem</a>
+          </div>
+          <div class="cart active" tabindex="0">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-quantity" class="cart_quantity"></span>
+        <div class="cart-content">
+            <ul class="cart-content__list">
+                <!-- <li class="cart-content__item">
+                    <article class="cart-content__product cart-product">
+                        <img class="cart-product__img" src="./assets/products/product1.jpg" alt="balm">
+                    <div class="cart-product__text">
+                        <h3 class="cart-product__title">Forlængende vandafvisende mascara</h3>
+                        <span class="cart-product__price">169,00 kr.</span>
+                    </div>
+                    <button class="cart-product__delete" aria-label="delete-product">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                    </article>
+                </li> -->
+            </ul>
+            <div class="cart-content__bottom">
+                <div class="cart-content__fullprice">
+                    <span>I alt</span>
+                    <span class="fullprice"></span>
+                </div>
+            <button class="btn-cart" type="button" data-graph-path="modal" data-graph-animation="fadeInUp" data-graph-speed="300">Bestil</button>
+
+            </div>
+        </div>
+        </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <!-- End smartphone / tablet look -->
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-container">
+            <h1 class="homepage-title">SKØNHED FOR ALLE</h1>
+            <p class="hero-text">Alt hvad du behøver...</p>
+            <p class="hero-text two">SMUK NU</p>
+            <a href="./products.html" class="btn-hero">Se udvalgte produkter</a>
+        </div> 
+    </section>
+    <section id="products">
+        <h2>UDVALGT <span class="title-pink">SKØNHED</span></h2>
+    <ul class="products-list" id="products-list">
+    </ul>
+    </section>
+<section class="statements">
+    <h2 class="statement-title"><span class="title-pink">SKØNHEDER</span> UDTALER</h2>
+    <ul class="statement-list"></ul>
+</section>
+<section class="membership">
+<div class="member-left">
+<h2 class="member-title">MEDLEM?</h2>
+<p class="membership-text">Vær med i kundeklubben for nye videoer, rabatkoder og mere!</p>
+<a href="membership.html" class="btn-member">Bliv medlem af kundeklubben</a>
+</div>
+<div id="index-member" class="member-img"></div>
+</section>
+<footer>
+<ul class="social-media-list">
+    <li class="SoMe-item">
+        <a href="">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+    </li>
+    <li class="SoMe-item">
+        <a href="">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </li>
+    <li class="SoMe-item">
+        <a href="">
+            <i class="fa-brands fa-pinterest"></i>
+        </a>
+    </li>
+    <li class="SoMe-item">
+        <a href="">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+    </li>
+    <li class="SoMe-item">
+        <a href="">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+    </li>
+</ul> 
+<address>
+    <a href="mailto:mail@smuk.nu">mail@smuk.nu</a><br>
+    <a href="callto:+4512334533">+45 123 345 33</a>
+
+</address>
+</footer>
+<div class="modal">
+    <div class="modal__container order-modal" role="dialog" aria-modal="true" data-graph-target="modal">
+        <div class="modal-content order-modal__content">
+            <div class="order-modal__top">
+                <h2 class="order-modal__title">Orderbekræftelsen</h2>
+                <p class="order-modal__number">Din bestilling #<span getRandomArbitrary()></span></p> 
+            </div>
+            <div class="order-modal__info">
+                <div class="order-modal__quantity order-modal__info-item">Antal varer i bestillingen:  <span></span></div>
+                <div class="order-modal__summ order-modal__info-item">I alt: <span> kr.</span></div>
+                <div class="order-modal__products order-modal__info-item">
+                    <button class="order-modal__btn">Se din bestilling
+                        <i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <ul class="order-modal__list">
+                        <!-- <li class="order-modal__item">
+                            <article class="order-modal__product order-product">
+                                <img src="./assets/products/product1.jpg" alt="" class="order-product__img">
+                                <div class="order-product__text">
+                                    <h3 class="order-product__title">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</h3>
+                                    <span class="order-product__price">190kr.</span>
+                                </div>
+                                <button class="order-product__delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                </button>
+                            </article>
+                        </li> -->
+                        
+                    </ul>
+                </div>
+            </div>
+            <form action="mail.php" enctype="multipart/form-data" class="order-modal__form order">
+                <input type="hidden" name="theme" value="Ring mig op">
+                <input type="hidden" name="admin_email[]" value="chudvskaja.ksenija@icloud.com">
+                <input type="hidden" name="form_subject" value="Order fra ">
+                <label class="order__label">
+                    <span class="order__text">Fornavn</span>
+                    <input type="text" name="Name" class="order__input">
+                </label><br>
+                <label class="order__label">
+                    <span class="order__text ">Tel. number</span>
+                    <input type="tel" name="tel" class="order__input" placeholder="+45 __ - __ - __">
+                </label><br>
+                <label class="order__label">
+                    <span class="order__text">E-mail</span>
+                    <input type="email" name="Email" class="order__input" placeholder="post@gmail.com">
+                </label>
+                <button class="order__btn btn">Bekræft bestilling</button>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="./js/burger-menu.js"></script>
+<script src="./js/inputmask.min.js"></script>
+<script src="https://kit.fontawesome.com/47244aaa39.js" crossorigin="anonymous"></script>
+<script src="./js/cart.js"></script>
+<script src="./js/modal.js"></script>
+<script src="./js/fetch-products.js"></script>
+<script src="./js/fetch-statements.js"></script>
+<script src="./js/fetch-member-img-index.js"></script>
+
+</body>
+</html>

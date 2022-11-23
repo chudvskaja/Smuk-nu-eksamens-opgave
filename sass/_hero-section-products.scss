@@ -1,0 +1,40 @@
+.hero {
+    background-image: url(../assets/headers/products.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 696px;
+    position: relative;
+  }
+  
+  .hero-container {
+   padding: 100px 28px;
+   background-color: var(--black-color);
+   position: absolute;
+   top: 103px;
+   width: 100%;
+   opacity: .8;
+  }
+
+  .hero-text {
+    color: var(--white-color);
+    font-size: 18px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 728px) {
+    .hero-container {
+      width: 80%;
+      top: 25%;
+      left: 10%;
+    }
+
+    h1 {
+      color: var(--white-color);
+    }
+
+     h2 {
+        font-size: 64px;
+        color: var(--black-color);
+      }
+}

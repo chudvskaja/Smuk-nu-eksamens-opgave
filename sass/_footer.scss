@@ -1,0 +1,22 @@
+footer {
+    padding: 17px 30px 26px;
+    background-color: var(--light-grey-color);
+  }
+  
+  .fa-brands {
+    font-size: 40px;
+    color: var(--white-color);
+  }
+  address {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .social-media-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  

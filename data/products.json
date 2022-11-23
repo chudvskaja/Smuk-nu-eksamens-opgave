@@ -1,0 +1,66 @@
+[
+    {
+        "id": 8281992819,
+        "title": "All purpose balm",
+        "price": 169,
+        "recommended": true,
+        "image": "https://smuknu.webmcdm.dk/products/product_8281992819.jpg",
+        "discountInPercent": ""
+    },
+    {
+        "id": 1213213211,
+        "title": "Forlængende vandafvisende mascara",
+        "price": 176,
+        "recommended": true,
+        "image": "https://smuknu.webmcdm.dk/products/product_1213213211.jpg",
+        "discountInPercent": "50"
+    },
+    {
+        "id": 5435343533,
+        "title": "Multi-Action Concealer",
+        "price": 85,
+        "recommended": true,
+        "image": "https://smuknu.webmcdm.dk/products/product_5435343533.jpg",
+        "discountInPercent": ""
+    },
+    {
+        "id": 4335542819,
+        "title": "Mayi Mousture Bamboo FibersShampoo",
+        "price": 212,
+        "recommended": true,
+        "image": "https://smuknu.webmcdm.dk/products/product_4335542819.jpg",
+        "discountInPercent": "25"
+    },
+    {
+        "id": 2349838201,
+        "title": "Shower Gel",
+        "price": 102,
+        "recommended": true,
+        "image": "https://smuknu.webmcdm.dk/products/product_2349838201.jpg",
+        "discountInPercent": ""
+    },
+    {
+        "id": 2233009200,
+        "title": "Bubble Bath, Body Wash, Conditioning detangler",
+        "price": 118,
+        "recommended": false,
+        "image": "https://smuknu.webmcdm.dk/products/product_2233009200.jpg",
+        "discountInPercent": ""
+    },
+    {
+        "id": 2332233444,
+        "title": "Facial oil",
+        "price": 324,
+        "recommended": true,
+        "image": "https://smuknu.webmcdm.dk/products/product_2332233444.jpg",
+        "discountInPercent": "10"
+    },
+    {
+        "id": 4566543883,
+        "title": "Eyeshadow",
+        "price": 110,
+        "recommended": true,
+        "image": "https://smuknu.webmcdm.dk/products/product_4566543883.jpg",
+        "discountInPercent": ""
+    }
+]

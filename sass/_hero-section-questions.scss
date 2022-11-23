@@ -1,0 +1,45 @@
+.hero {
+    background-image: url(../assets/headers/abouthealth.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 587px;
+    position: relative;
+  }
+
+  .hero-container {
+    padding: 45px 30px 47px 30px;
+    background-color: var(--pink-accent);
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    color: var(--white-color);
+   
+   }
+  
+   
+   .hero-text {
+     font-size: 18px;
+     text-align: center;
+   }
+
+   .hero-text.one {
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 728px) {
+
+  .hero-container {
+    width: 80%;
+    top: 25%;
+    left: 10%;
+  }
+
+  h1, h2 {
+    font-size: 64px;
+  }
+
+  .hero-text.two {
+    display: none;
+  }
+}

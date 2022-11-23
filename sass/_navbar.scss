@@ -1,0 +1,116 @@
+.mobile-container {
+    margin: auto;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border-radius: 10px;
+    position: relative;
+  }
+
+  // KUN MODILE MENU START
+
+ @media screen and (max-width: 727px){
+  .topnav {
+    overflow: hidden; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+  
+ & #myLinks {
+    display: none;
+    text-align: end;
+    padding-bottom: 33px;
+    border-radius: 0 0 15px 16px;
+    background-color: var(--black-color);
+    position: absolute;
+    z-index: 100;
+    width: 100%; 
+    top: 100%;
+  }
+
+  & a { 
+    color: white;
+    padding: 14px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+  }
+
+  & a.icon {
+    color: var(--pink-accent);
+    display: block;
+    right: 0;
+    top: 0;
+  }
+} 
+
+// MOBILE MENU FINISH 
+
+
+  .fa-bars {
+    font-size: 30px;
+  }
+}
+
+  .fa-cart-shopping {
+    color: var(--light-grey-color);
+    font-size: 24px;
+    display: block;
+    margin-right: 15px;
+
+    &.active {
+      color: var(--pink-accent);
+    }
+  }
+
+
+// TABLET OG DESKTOP START
+  @media screen and (min-width: 728px) {
+    .topnav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: var(--white-color);
+      padding-bottom: 0;
+      border-radius: 0; 
+      z-index: 10000;
+    
+  
+
+    & #myLinks {
+      display: flex;
+      flex: 2;
+      background-color: #fff;
+      align-items: center;
+      justify-content: space-around; 
+    }
+
+    & a {
+      color: black;
+      padding: 14px 15px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      display: block;
+      text-transform: uppercase; 
+    }
+
+    & a.icon { 
+      display: none;
+    }
+  }
+    .fa-cart-shopping{
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (min-width:729px) and (max-width: 1040px) {
+    .topnav a{
+      text-transform: lowercase;
+    }
+  }

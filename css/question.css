@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+:root {
+    --white-color: #FFFFFF;
+    --light-pink: #F7F0F2;
+    --pink-accent: #FA96AA;
+    --light-grey-color: #D9D9D9;
+    --grey-color: #707070;
+    --black-color: #000000;
+    
+
+}
+
+.mobile-container {
+    margin: auto;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .topnav {
+    overflow: hidden;
+  
+   
+  }
+  
+  .topnav #myLinks {
+    display: none;
+    text-align: end;
+    padding-bottom: 33px;
+    border-radius: 0 0 15px 16px;
+    background-color: var(--black-color);
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    
+  }
+  
+  .topnav a.icon {
+    color: var(--pink-accent);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .fa-bars {
+    font-size: 30px;
+  }
+
+/* MOBILE NAVBAR FINISH  */
+/* MOBILE HERO */
+
+.hero {
+    background-image: url(../assets/headers/abouthealth.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 587px;
+    position: relative;
+  }
+  
+  .hero-container {
+   padding: 45px 30px 47px 30px;
+   background-color: var(--pink-accent);
+   position: absolute;
+   top: 100px;
+   width: 100%;
+   color: var(--white-color);
+  
+  }
+  
+  h1 {
+    font-size: 54px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  
+  }
+  
+  .hero-text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .hero-text.one {
+    margin-bottom: 24px;
+  }
+  
+  /* MOBILE HERO FINISH */
+
+  /* MOBILE QUESTION SECTION */
+
+  .questions {
+    padding: 45px 30px 60px;
+  }
+  .question-item {
+    padding: 29px 0px;
+    border-top: 1px solid var(--pink-accent);
+  }
+
+  .question-icon {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+
+  .question-item:last-child{
+    border-bottom: 1px solid var(--pink-accent);
+  }
+
+  .question-item:hover {
+    font-weight: bold;
+   
+  }
+
+  .question-item:hover>.dropdown-text{
+    display: block;
+  }
+
+  .question-item:hover .fa-question {
+    color: var(--pink-accent);
+  }
+  
+
+  .fa-question {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--light-grey-color);
+  }
+
+  .question-text {
+    font-size: 18px;
+    display: block;
+  }
+
+  .dropdown-text {
+  display: none;
+  margin-top: 34px;
+  background-color: var(--white-color);
+  font-weight: 400;
+  font-size: 14px;
+  }
+
+
+
+  /* MOBILE MEMBERSHIP START  */
+  h2 {
+    font-size: 54px;
+    text-align: center;
+    margin: 44px 0 46px;
+  }
+
+.membership {
+    background-color: var(--light-pink);
+    padding: 44px 34px 77px;
+    margin-top: 66px;
+  }
+  
+  .membership-text {
+    text-align: center;
+    font-size: 18px; 
+    margin-bottom: 29px;
+  
+  }
+  
+  .btn-member {
+    width: 320px;
+    height: 60px;
+    color: var(--white-color);
+    background-color: var(--pink-accent);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px var(--light-grey-color);
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* MOBILE MEMBERSHIP FINISH */
+  
+  /* MOBILE FOOTER */
+  
+  footer {
+    padding: 17px 30px 26px;
+    background-color: var(--light-grey-color);
+  }
+  
+  .fa-brands {
+    font-size: 40px;
+    color: var(--white-color);
+  }
+  address {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .social-media-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+  
+  }
+
+  @media screen and (min-width: 728px) {
+    .hero-container {
+      width: 80%;
+      top: 25%;
+      left: 10%;
+    }
+  
+    h1, h2 {
+      font-size: 64px;
+    }
+  
+    .hero-text.two {
+      display: none;
+    }
+  }
